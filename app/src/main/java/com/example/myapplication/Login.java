@@ -6,11 +6,6 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.SQLException;
 
 public class Login extends AppCompatActivity {
 
@@ -41,6 +36,11 @@ public class Login extends AppCompatActivity {
         if (editText1.getText().toString().equals("ADMIN") && editText2.getText().toString().equals("ADMIN") ){
 
             Intent intent = new Intent(this, Adminitrador.class);
+            startActivity(intent);
+        }
+        if (editText1.getText().toString().equals("usuario") && editText2.getText().toString().equals("usuario") ){
+
+            Intent intent = new Intent(this, Main_Activity_admin.class);
             startActivity(intent);
         }
 
