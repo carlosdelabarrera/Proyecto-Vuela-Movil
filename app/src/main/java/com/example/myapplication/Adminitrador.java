@@ -30,7 +30,7 @@ public class Adminitrador extends AppCompatActivity {
         EditText editText4 = (EditText) findViewById(R.id.editTextTextPersonName5);
         EditText editText5 = (EditText) findViewById(R.id.editTextTextPersonName6);
 
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "base_datos", null, 1);
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "base_datos2", null, 1);
         SQLiteDatabase bd = admin.getWritableDatabase();
         Integer codigo = Integer.parseInt(editText1.getText().toString());
         String nombre = editText2.getText().toString();
@@ -65,7 +65,7 @@ public class Adminitrador extends AppCompatActivity {
         EditText editText4 = (EditText) findViewById(R.id.editTextTextPersonName5);
         EditText editText5 = (EditText) findViewById(R.id.editTextTextPersonName6);
 
-        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "base_datos", null, 1);
+        AdminSQLiteOpenHelper admin = new AdminSQLiteOpenHelper(this, "base_datos2", null, 1);
 
         SQLiteDatabase bd = admin.getWritableDatabase();
         Integer codigo = Integer.parseInt(editText1.getText().toString());

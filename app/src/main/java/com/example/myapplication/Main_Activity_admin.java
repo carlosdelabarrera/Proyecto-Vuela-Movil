@@ -13,13 +13,9 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
-import androidx.navigation.fragment.FragmentNavigator;
 
-import com.example.myapplication.R;
-import com.example.myapplication.administrador.AgregarFragment;
 import com.example.myapplication.administrador.EliminarFragment;
 import com.example.myapplication.administrador.ModificarFragment;
-import com.example.myapplication.ui.home.HomeFragment;
 import com.google.android.material.navigation.NavigationView;
 
 public class Main_Activity_admin extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
