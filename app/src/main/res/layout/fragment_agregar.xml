@@ -17,7 +17,7 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_weight=".90"
+            android:layout_weight=".99"
             android:orientation="horizontal">
 
             <ImageButton
@@ -26,7 +26,7 @@
                 android:layout_height="match_parent"
                 android:layout_weight=".80"
                 android:backgroundTint="#FAF7F7"
-                android:onClick="Volver_login"
+
                 app:srcCompat="@android:drawable/ic_menu_revert"
                 tools:ignore="SpeakableTextPresentCheck" />
 
@@ -39,7 +39,7 @@
                 android:text="PANEL DE CONTROL "
                 android:textAlignment="center"
                 android:textColor="@color/black"
-                android:textSize="30dp"
+                android:textSize="40dp"
                 android:textStyle="bold" />
 
             <ImageButton
