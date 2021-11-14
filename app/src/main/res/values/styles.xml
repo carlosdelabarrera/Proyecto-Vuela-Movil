@@ -2,6 +2,7 @@
 
     <style name="Widget.Theme.MyApplication.ActionBar.Fullscreen" parent="Widget.AppCompat.ActionBar">
         <item name="android:background">@color/white</item>
+        <item name="android:windowTranslucentStatus">true</item>
     </style>
 
     <style name="Widget.Theme.MyApplication.ButtonBar.Fullscreen" parent="">

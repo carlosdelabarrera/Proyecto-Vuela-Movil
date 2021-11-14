@@ -1,10 +1,13 @@
 package com.example.myapplication;
 
 import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 import android.view.MenuItem;
 
 import androidx.annotation.NonNull;
+import androidx.annotation.Nullable;
+import androidx.appcompat.app.ActionBarDrawerToggle;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.drawerlayout.widget.DrawerLayout;
@@ -14,6 +17,7 @@ import androidx.navigation.fragment.FragmentNavigator;
 
 import com.example.myapplication.R;
 import com.example.myapplication.administrador.AgregarFragment;
+import com.example.myapplication.administrador.EliminarFragment;
 import com.example.myapplication.administrador.ModificarFragment;
 import com.example.myapplication.ui.home.HomeFragment;
 import com.google.android.material.navigation.NavigationView;
@@ -22,6 +26,8 @@ public class Main_Activity_admin extends AppCompatActivity implements Navigation
     DrawerLayout drawerLayout_admin ;
     NavigationView navigationView_admin;
     Toolbar toolbar_admin;
+
+    ActionBarDrawerToggle Toggle;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -29,7 +35,7 @@ public class Main_Activity_admin extends AppCompatActivity implements Navigation
         Intent intent = getIntent();
 
         drawerLayout_admin = findViewById(R.id.drawer_layout_admin);
-        toolbar_admin = findViewById(R.id.toolbar_admin);
+        toolbar_admin = findViewById(R.id.toolbar);
         navigationView_admin= findViewById(R.id.nav_view_admin);
 
         getSupportFragmentManager().beginTransaction().add(R.id.content,new AgregarFragment()).commit();
@@ -37,8 +43,31 @@ public class Main_Activity_admin extends AppCompatActivity implements Navigation
 
 
         //setSupportActionBar(toolbar_admin);
-        navigationView_admin.setNavigationItemSelectedListener(this);
 
+
+        Toggle = setUpDrawerToggle();
+        drawerLayout_admin.addDrawerListener(Toggle);
+
+
+
+         // Toggle = new ActionBarDrawerToggle(this,drawerLayout_admin,toolbar_admin,R.string.drawer_open,R.string.drawer_open);
+        navigationView_admin.setNavigationItemSelectedListener(this);
+    }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        Toggle.syncState();
+    }
+
+    @Override
+    public void onConfigurationChanged(@NonNull Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        Toggle.onConfigurationChanged(newConfig);
+    }
+
+    private ActionBarDrawerToggle setUpDrawerToggle() {
+        return new ActionBarDrawerToggle(this,drawerLayout_admin,toolbar_admin,R.string.drawer_open,R.string.drawer_open);
     }
 
     @Override
@@ -57,9 +86,19 @@ public class Main_Activity_admin extends AppCompatActivity implements Navigation
             case R.id.nav_modificar:
                 ft.replace(R.id.content,new ModificarFragment()).commit();
                 break;
-
+            case R.id.nav_eliminar:
+                ft.replace(R.id.content,new EliminarFragment()).commit();
+                break;
         }
         setTitle(item.getTitle());
         drawerLayout_admin.closeDrawers();
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
+        if (Toggle.onOptionsItemSelected(item)){
+            return  true;
+        }
+        return super.onOptionsItemSelected(item);
     }
 }
