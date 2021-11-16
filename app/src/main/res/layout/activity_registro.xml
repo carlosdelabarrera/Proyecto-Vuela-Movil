@@ -4,11 +4,13 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDC6B5"
     tools:context=".Registro">
 
     <LinearLayout
         android:layout_width="409dp"
         android:layout_height="101dp"
+        android:background="#FDC6B5"
         android:gravity="center_horizontal"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
@@ -43,6 +45,7 @@
         android:id="@+id/linearLayout3"
         android:layout_width="337dp"
         android:layout_height="496dp"
+        android:background="#FDC6B5"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -54,9 +57,10 @@
             android:id="@+id/editTextTextPersonName"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#474747"
             android:ems="10"
+            android:hint="nombre"
             android:inputType="textPersonName"
-            android:text="Name"
             android:textAlignment="center"
             android:textColor="#72070707" />
 
@@ -68,11 +72,12 @@
             android:id="@+id/editTextTextPassword2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#8F8D8D"
             android:ems="10"
+            android:hint="Contraseña"
             android:inputType="textPersonName"
-            android:text="Contraseña"
             android:textAlignment="center"
-            android:textColor="#72070707"/>
+            android:textColor="#72070707" />
 
         <Space
             android:layout_width="20dp"
@@ -82,11 +87,12 @@
             android:id="@+id/editTextTextPassword3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#8F8D8D"
             android:ems="10"
+            android:hint="Repetir Contraseña"
             android:inputType="textPersonName"
-            android:text="Repetir Contraseña"
             android:textAlignment="center"
-            android:textColor="#72070707"/>
+            android:textColor="#72070707" />
 
         <Space
             android:layout_width="20dp"
@@ -96,11 +102,12 @@
             android:id="@+id/editTextTextEmailAddress2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:backgroundTint="#8F8D8D"
             android:ems="10"
+            android:hint="Email"
             android:inputType="textPersonName"
-            android:text="Email"
             android:textAlignment="center"
-            android:textColor="#72070707"/>
+            android:textColor="#72070707" />
 
         <Space
             android:layout_width="20dp"

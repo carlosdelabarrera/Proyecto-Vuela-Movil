@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#FDC6B5"
     tools:context=".Login">
 
     <LinearLayout
@@ -26,11 +27,12 @@
             android:id="@+id/editTextTextEmailAddress"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#0FFFFFFF"
             android:ems="10"
+            android:hint="Nombre"
+
             android:inputType="textPersonName"
             android:minHeight="48dp"
-
-            android:hint="Name"
             android:textAlignment="center"
             android:textColor="#74090808"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -43,10 +45,11 @@
             android:id="@+id/editTextNumberPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="#0FFFFFFF"
             android:ems="10"
+            android:hint="Contraseña"
             android:inputType="textAutoComplete"
             android:minHeight="48dp"
-            android:hint="Contraseña"
             android:textAlignment="center"
             android:textColor="#7C151414"
             tools:ignore="SpeakableTextPresentCheck" />
@@ -93,7 +96,6 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
-            android:onClick="admin"
             android:text="Login"
             android:textColor="@color/white" />
 
@@ -121,7 +123,7 @@
 
         <Space
             android:layout_width="220dp"
-            android:layout_height="0dp" />
+            android:layout_height="54dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
