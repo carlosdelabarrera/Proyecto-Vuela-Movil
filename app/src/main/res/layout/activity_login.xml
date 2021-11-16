@@ -48,11 +48,12 @@
             android:background="#0FFFFFFF"
             android:ems="10"
             android:hint="Contraseña"
-            android:inputType="textAutoComplete"
+            android:inputType="textPassword"
             android:minHeight="48dp"
             android:textAlignment="center"
             android:textColor="#7C151414"
-            tools:ignore="SpeakableTextPresentCheck" />
+            tools:ignore="SpeakableTextPresentCheck"
+            />
 
         <Space
             android:layout_width="10dp"
@@ -96,6 +97,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
+            android:onClick="admin"
             android:text="Login"
             android:textColor="@color/white" />
 
