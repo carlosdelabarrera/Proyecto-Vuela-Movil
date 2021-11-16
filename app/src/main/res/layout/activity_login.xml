@@ -53,6 +53,13 @@
             android:textAlignment="center"
             android:textColor="#7C151414"
             tools:ignore="SpeakableTextPresentCheck" />
+<<<<<<< Updated upstream
+=======
+
+        <Space
+            android:layout_width="220dp"
+            android:layout_height="54dp" />
+>>>>>>> Stashed changes
 
         <Space
             android:layout_width="10dp"
@@ -120,10 +127,6 @@
             android:onClick="Volver"
             app:srcCompat="@android:drawable/ic_menu_revert"
             tools:ignore="SpeakableTextPresentCheck" />
-
-        <Space
-            android:layout_width="220dp"
-            android:layout_height="54dp" />
 
         <ImageButton
             android:id="@+id/imageButton"
