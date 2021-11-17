@@ -41,9 +41,7 @@ dependencies {
     implementation "androidx.room:room-runtime:$rootProject.roomVersion"
     implementation 'androidx.navigation:navigation-ui:2.3.5'
     implementation 'androidx.navigation:navigation-fragment:2.3.5'
-    implementation 'com.android.support:support-v4:23.1.1'
-    implementation 'com.android.support:appcompat-v7:23.1.1'
-    implementation 'com.android.support:support-annotations:23.1.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     annotationProcessor "androidx.room:room-compiler:$rootProject.roomVersion"
     androidTestImplementation "androidx.room:room-testing:$rootProject.roomVersion"
 
