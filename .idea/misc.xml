@@ -3,10 +3,17 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_adminitrador.xml" value="0.1" />
         <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_bienvanida.xml" value="0.1" />
-        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_lista_vuelos.xml" value="0.15" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_lista_vuelos.xml" value="1.0" />
         <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_registro.xml" value="0.33" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/activity_vuelos.xml" value="0.25" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/app_bar_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/fragment_gallery.xml" value="0.1" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/fragment_home.xml" value="0.1" />
+        <entry key="..\:/Users/Fredy Alexander/Documents/GitHub/Proyecto-Vuela-Movil1/app/src/main/res/layout/fragment_slideshow.xml" value="0.1" />
       </map>
     </option>
   </component>

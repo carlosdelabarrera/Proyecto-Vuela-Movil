@@ -11,19 +11,17 @@
         android:id="@+id/textView7"
         android:layout_width="149dp"
         android:layout_height="55dp"
+        android:layout_marginStart="128dp"
         android:text="PruebaLista"
         android:textAppearance="@style/TextAppearance.AppCompat.Display2"
         android:visibility="visible"
-        app:layout_constraintBottom_toTopOf="@+id/ListViewId"
-        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="38dp" />
 
     <ListView
         android:id="@+id/ListViewId"
         android:layout_width="384dp"
         android:layout_height="538dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        tools:layout_editor_absoluteX="18dp"
+        tools:layout_editor_absoluteY="158dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
