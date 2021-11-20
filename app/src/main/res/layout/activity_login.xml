@@ -53,14 +53,11 @@
             android:textAlignment="center"
             android:textColor="#7C151414"
             tools:ignore="SpeakableTextPresentCheck" />
-<<<<<<< Updated upstream
-=======
+
 
         <Space
             android:layout_width="220dp"
             android:layout_height="54dp" />
->>>>>>> Stashed changes
-
         <Space
             android:layout_width="10dp"
             android:layout_height="10dp" />
@@ -103,6 +100,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:backgroundTint="#F44336"
+            android:onClick="admin"
             android:text="Login"
             android:textColor="@color/white" />
 
