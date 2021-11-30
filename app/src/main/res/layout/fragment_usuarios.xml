@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".administrador.UsuariosFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <LinearLayout
+        android:id="@+id/linearLayout5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        >
+
+
+        <TextView
+            android:id="@+id/textadmin"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:fontFamily="sans-serif-condensed"
+            android:text="PANEL DE CONTROL"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="42dp"
+            android:textStyle="bold" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="150dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/Usuarios1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="cedula"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#72070707" />
+
+        <EditText
+            android:id="@+id/Usuarios2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="nombre"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#72070707" />
+
+        <EditText
+            android:id="@+id/Usuarios3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="edad"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#72070707" />
+
+        <EditText
+            android:id="@+id/Usuarios4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="correo"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#72070707" />
+
+        <EditText
+            android:id="@+id/Usuarios5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="telefono"
+            android:inputType="textPersonName"
+            android:textAlignment="center"
+            android:textColor="#72070707" />
+
+        <Space
+            android:layout_width="10sp"
+            android:layout_height="30sp">
+
+        </Space>
+
+        <Button
+            android:id="@+id/UsuariosAgregar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF44336"
+            android:onClick="agregar_usuario"
+            android:text="agregar" />
+
+        <Button
+            android:id="@+id/UsuariosConsultar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF44336"
+            android:onClick="consultaporcodigo"
+            android:text="consultar por id" />
+
+        <Button
+            android:id="@+id/UsuariosModificar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF44336"
+            android:text="modificar por id" />
+
+        <Button
+            android:id="@+id/UsuariosEliminar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#FFF44336"
+            android:text="eliminar por id" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
